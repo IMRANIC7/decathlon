@@ -1115,43 +1115,269 @@ Football Development • Event Management • Community Impact
 </div>
 
 </section>
-.budget-table{
-width:100%;
-border-collapse:collapse;
-margin-top:20px;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kipsta Cup Kochi 2026 - Budget Summary</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
 }
 
-.budget-table th{
-background:rgba(255,215,0,0.08);
-color:#FFD700;
-padding:18px;
-text-align:left;
-font-size:15px;
-letter-spacing:1px;
+body{
+    background:#0f172a;
+    color:#fff;
+    padding:40px 20px;
 }
 
-.budget-table td{
-padding:16px 18px;
-border-bottom:1px solid rgba(255,255,255,0.08);
-color:#ddd;
+.container{
+    max-width:1000px;
+    margin:auto;
 }
 
-.total-row{
-font-weight:700;
-background:rgba(255,215,0,0.05);
+.card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:20px;
+    padding:30px;
+    margin-bottom:25px;
+    backdrop-filter:blur(10px);
 }
 
-.total-row td{
-color:#FFD700;
-font-size:18px;
+h1{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:10px;
 }
 
 .subtitle{
-max-width:850px;
-font-size:18px;
-line-height:1.8;
-color:#cfcfcf;
+    text-align:center;
+    color:#94a3b8;
+    margin-bottom:40px;
 }
 
+h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.details{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.detail-box{
+    background:rgba(255,255,255,0.03);
+    padding:20px;
+    border-radius:15px;
+}
+
+.detail-box h3{
+    color:#94a3b8;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.detail-box p{
+    font-size:28px;
+    font-weight:700;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#1e293b;
+    padding:15px;
+    text-align:left;
+}
+
+td{
+    padding:15px;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.total-row{
+    background:#1e293b;
+    font-weight:700;
+}
+
+.summary-table td{
+    font-size:18px;
+}
+
+.deficit{
+    color:#ef4444;
+    font-weight:800;
+}
+
+.calculation{
+    line-height:2;
+    font-size:18px;
+}
+
+.highlight{
+    color:#38bdf8;
+    font-weight:700;
+}
+
+.footer{
+    text-align:center;
+    margin-top:20px;
+    color:#94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Kipsta Cup Kochi 2026</h1>
+    <p class="subtitle">Tournament Budget Summary</p>
+
+    <!-- Tournament Details -->
+    <div class="card">
+        <h2>Tournament Details</h2>
+
+        <div class="details">
+
+            <div class="detail-box">
+                <h3>Number of Teams</h3>
+                <p>16</p>
+            </div>
+
+            <div class="detail-box">
+                <h3>Registration Fee / Team</h3>
+                <p>₹1,999</p>
+            </div>
+
+            <div class="detail-box">
+                <h3>Total Registration Income</h3>
+                <p>₹31,984</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Expense Details -->
+    <div class="card">
+        <h2>Expense Details</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Expense Item</th>
+                    <th>Amount (₹)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Cash Prize</td>
+                    <td>25,000</td>
+                </tr>
+
+                <tr>
+                    <td>Referees Fees</td>
+                    <td>5,500</td>
+                </tr>
+
+                <tr>
+                    <td>Referees Food + Volunteers + Physio Food</td>
+                    <td>2,000</td>
+                </tr>
+
+                <tr>
+                    <td>Volunteers</td>
+                    <td>2,000</td>
+                </tr>
+
+                <tr>
+                    <td>Turf Cost</td>
+                    <td>9,000</td>
+                </tr>
+
+                <tr>
+                    <td>Sound + Chair + Table + Pagoda</td>
+                    <td>10,500</td>
+                </tr>
+
+                <tr>
+                    <td>Transportation Cost</td>
+                    <td>3,400</td>
+                </tr>
+
+                <tr>
+                    <td>Trophy + Memento + Printing</td>
+                    <td>9,000</td>
+                </tr>
+
+                <tr>
+                    <td>Video</td>
+                    <td>4,000</td>
+                </tr>
+
+                <tr>
+                    <td>Commentary</td>
+                    <td>2,500</td>
+                </tr>
+
+                <tr class="total-row">
+                    <td>Total Expense</td>
+                    <td>₹72,900</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Financial Summary -->
+    <div class="card">
+        <h2>Financial Summary</h2>
+
+        <table class="summary-table">
+            <tr>
+                <td>Total Registration Income</td>
+                <td>₹31,984</td>
+            </tr>
+
+            <tr>
+                <td>Total Expense</td>
+                <td>₹72,900</td>
+            </tr>
+
+            <tr>
+                <td><strong>Deficit / Sponsorship Required</strong></td>
+                <td class="deficit">₹40,916</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Calculation -->
+    <div class="card">
+        <h2>Calculation</h2>
+
+        <div class="calculation">
+            <p><span class="highlight">16 Teams × ₹1,999</span> = ₹31,984</p>
+            <p><span class="highlight">₹72,900 (Expense)</span> − ₹31,984 (Income) = ₹40,916</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        Kipsta Cup Kochi 2026 | Budget Planning & Sponsorship Proposal
+    </div>
+
+</div>
+
+</body>
+</html>
 </body>
 </html>
